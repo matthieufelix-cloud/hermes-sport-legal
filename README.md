@@ -4,6 +4,9 @@ Static legal-information site for the private HERMES Sport Platform HUAWEI Healt
 integration. The site contains no JavaScript, analytics, cookies, forms, application credentials, or
 personal sport data.
 
+The distinct French page at `mobile/privacy/` covers the Android HERMES Sport companion and its
+isolated AppGallery review instance. Keep it aligned with the shipped APK and review-server retention.
+
 ## Review before publication
 
 The operator identity, public contact address, country, and governing law have been customized.
@@ -32,6 +35,7 @@ The command must return no match before publication or submission to HUAWEI.
 For the GitHub account `matthieufelix-cloud` and the repository name above, the expected fields are:
 
 - Privacy policy: `https://matthieufelix-cloud.github.io/hermes-sport-legal/privacy/`
+- Android privacy policy: `https://matthieufelix-cloud.github.io/hermes-sport-legal/mobile/privacy/`
 - User agreement: `https://matthieufelix-cloud.github.io/hermes-sport-legal/terms/`
 
 Do not enter these URLs in HUAWEI until GitHub Pages returns HTTP 200 and the publication reminder

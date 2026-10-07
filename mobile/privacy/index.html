@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Politique de confidentialité de l'application Android HERMES Sport.">
+    <title>Confidentialité — HERMES Sport Android</title>
+    <link rel="stylesheet" href="../../assets/style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../../" aria-label="Accueil des informations légales HERMES">
+        <span class="brand-mark" aria-hidden="true">H</span>
+        <span>HERMES <strong>RUN</strong></span>
+      </a>
+      <nav aria-label="Navigation">
+        <a aria-current="page" href="./">Confidentialité Android</a>
+        <a href="../../privacy/">Service HUAWEI Health</a>
+      </nav>
+    </header>
+
+    <main class="document">
+      <div class="document-heading">
+        <p class="eyebrow">APPLICATION ANDROID · VERSION 1.0</p>
+        <h1>Politique de confidentialité HERMES Sport</h1>
+        <p class="meta">Mise à jour : 7 octobre 2026</p>
+      </div>
+
+      <section>
+        <h2>1. Éditeur et portée</h2>
+        <p>HERMES Sport pour Android est éditée par <strong>Matthieu FELIX</strong>, personne physique établie en France. Pour l'assistance et les demandes relatives aux données de l'instance de revue, écrivez à <a href="mailto:matthieu_felix@yahoo.fr">matthieu_felix@yahoo.fr</a>.</p>
+        <p>L'application est le compagnon d'une instance HERMES Sport indiquée par son utilisateur. L'exploitant de chaque instance choisit les fonctions, l'hébergement et les durées de conservation des activités qu'elle reçoit. Les règles détaillées ci-dessous pour l'instance de revue AppGallery concernent l'instance exploitée par Matthieu FELIX ; une autre instance privée relève de son propre exploitant.</p>
+      </section>
+
+      <section>
+        <h2>2. Données et fonctions</h2>
+        <ul>
+          <li><strong>Appairage :</strong> l'adresse HTTPS de l'instance et le code saisi lui sont envoyés pour autoriser le téléphone. L'application reçoit un jeton propre à l'appareil ; elle conserve ce jeton et l'adresse de l'instance sous chiffrement Android Keystore, sans les inclure dans les sauvegardes Android.</li>
+          <li><strong>Consultation :</strong> l'application affiche les activités, trajets GPS et mesures fournies par l'instance. Elle les garde en mémoire pendant l'utilisation et n'en crée pas de copie durable sur le téléphone.</li>
+          <li><strong>Import TCX facultatif :</strong> après accord explicite avant le choix du fichier, le TCX est transmis à l'instance pour l'aperçu. Si l'utilisateur confirme ensuite l'import, il est transmis de nouveau et l'instance conserve les activités et mesures normalisées. Le parcours actuel ne conserve pas le fichier TCX original. Un TCX peut contenir fréquence cardiaque, cadence et positions GPS ; selon son contenu, certaines données peuvent révéler des informations de santé.</li>
+          <li><strong>Fonctions selon l'instance :</strong> Garmin est synchronisé par le serveur lorsqu'il est configuré ; le Coach peut transmettre une question et un contexte sportif à un fournisseur d'IA choisi par l'exploitant. Ces deux fonctions sont désactivées sur l'instance de revue. Cette version Android ne lit pas directement HUAWEI Health.</li>
+        </ul>
+        <p>L'application demande uniquement l'accès Android à Internet. Elle n'intègre ni publicité ni mesure d'audience.</p>
+      </section>
+
+      <section>
+        <h2>3. Finalités et fondements</h2>
+        <p>Sur l'instance de revue, l'appairage et la consultation sont nécessaires à la fourniture du service demandé (article 6, paragraphe 1, point b, du RGPD). L'import facultatif d'un TCX repose sur l'accord explicite donné dans l'application avant l'aperçu (article 6, paragraphe 1, point a, et, si le fichier contient des données de santé, article 9, paragraphe 2, point a). L'utilisateur peut retirer cet accord pour l'avenir en ne sélectionnant plus de fichier et demander l'effacement d'un import déjà effectué au contact ci-dessus. Les journaux techniques limités servent à diagnostiquer les erreurs et protéger l'accès à l'instance, dans l'intérêt légitime de son exploitant à sécuriser ce service (article 6, paragraphe 1, point f).</p>
+        <p>Le refus d'appairer empêche l'accès aux séances ; le refus d'envoyer un TCX n'empêche pas la consultation des séances déjà disponibles. Aucune donnée n'est utilisée à des fins publicitaires ou vendue.</p>
+      </section>
+
+      <section>
+        <h2>4. Destinataires et hébergement</h2>
+        <p>Les données sportives vont à l'instance HTTPS saisie dans l'application et aux personnes autorisées à l'administrer. L'instance de revue est séparée de l'instance personnelle de l'éditeur et fonctionne sur son ordinateur Lenovo. Elle est exposée par <a href="https://tailscale.com/docs/features/tailscale-funnel">Tailscale Funnel</a> : Tailscale relaie un trafic chiffré et peut traiter des métadonnées techniques de connexion selon sa <a href="https://tailscale.com/legal/privacy-policy">politique de confidentialité</a> et son <a href="https://tailscale.com/dpa">accord de traitement</a>. Garmin et le fournisseur du Coach ne reçoivent pas les données de l'instance de revue, ces fonctions y étant désactivées.</p>
+        <p>Cette page publique est hébergée par GitHub Pages. GitHub peut traiter les informations techniques de visite selon sa <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">déclaration de confidentialité</a> ; aucune activité sportive n'est publiée sur GitHub Pages. Des métadonnées techniques traitées par ces fournisseurs peuvent être transférées hors de l'Espace économique européen, sous les garanties qu'ils décrivent dans leurs documents.</p>
+      </section>
+
+      <section>
+        <h2>5. Conservation sur l'instance de revue</h2>
+        <ul>
+          <li>Les activités TCX importées sont supprimées dès qu'elles ont plus de 30 jours, lors de la purge quotidienne. Les deux séances fictives de démonstration restent pendant la revue.</li>
+          <li>Les enregistrements des codes d'appairage sont supprimés sept jours après leur utilisation ou leur expiration, lors de la purge quotidienne.</li>
+          <li>Le jeton du téléphone expire au plus tard 90 jours après sa création. La déconnexion révoque immédiatement son accès et efface le jeton local. L'enregistrement serveur du téléphone est supprimé 30 jours après révocation ou expiration, lors de la purge quotidienne.</li>
+          <li>La base et le volume de fichiers sont sauvegardés quotidiennement dans des archives chiffrées sur le même Lenovo. Les sauvegardes sont éliminées sous sept jours en fonctionnement normal. Un import effacé de la base peut donc encore figurer dans une archive plus ancienne jusqu'à son expiration.</li>
+          <li>Les journaux de l'API sont limités en taille et effacés lors d'une recréation au moins hebdomadaire du conteneur. Les autres conteneurs de revue ne conservent pas de journaux Docker. Les journaux techniques éventuels de Tailscale et du système hôte suivent leurs propres règles.</li>
+        </ul>
+        <p>Après la décision finale concernant la revue, l'instance et ses volumes seront fermés et effacés sous 30 jours, sauf si une nouvelle revue est expressément ouverte. Cette opération de fin de vie est manuelle.</p>
+      </section>
+
+      <section>
+        <h2>6. Vos choix et vos droits</h2>
+        <p>Le bouton « Déconnecter ce téléphone » dans les réglages révoque son accès mais ne supprime pas les activités du serveur. Pour accéder à vos données, en demander une copie, une correction ou l'effacement sur l'instance de revue, écrivez à <a href="mailto:matthieu_felix@yahoo.fr">matthieu_felix@yahoo.fr</a> en précisant l'instance et les séances concernées. Ne transmettez jamais un code d'appairage ou un jeton par courriel. Une vérification raisonnable de votre lien avec les données pourra être demandée avant leur communication ou leur suppression. Pour une autre instance, contactez également son exploitant.</p>
+        <p>Vous pouvez aussi demander la limitation ou vous opposer à certains traitements lorsque la loi le permet. Si vous estimez que vos droits ne sont pas respectés, vous pouvez <a href="https://www.cnil.fr/fr/adresser-une-plainte">saisir la CNIL</a>.</p>
+      </section>
+
+      <section>
+        <h2>7. Sécurité et changements</h2>
+        <p>La version de diffusion exige HTTPS. Les codes d'appairage sont à usage unique ; les jetons sont révocables. La présente politique sera mise à jour si les fonctions, les destinataires ou les durées changent.</p>
+      </section>
+    </main>
+
+    <footer>
+      <span>HERMES Sport Android</span>
+      <span><a href="mailto:matthieu_felix@yahoo.fr">Contact confidentialité</a></span>
+    </footer>
+  </body>
+</html>
