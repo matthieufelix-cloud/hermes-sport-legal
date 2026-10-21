@@ -1,42 +1,54 @@
 <!doctype html>
-<html lang="fr">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Instructions de revue et fichier TCX fictif pour HERMES Sport.">
-    <title>Instructions de revue — HERMES Sport</title>
+    <meta name="description" content="AppGallery reviewer instructions for HERMES Sport 0.1.0 (3): server pairing, sample activities, TCX import and AI Coach.">
+    <title>AppGallery review instructions — HERMES Sport</title>
     <link rel="stylesheet" href="../../assets/style.css">
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="../../" aria-label="Accueil des informations HERMES">
+      <a class="brand" href="../../" aria-label="HERMES information home">
         <span class="brand-mark" aria-hidden="true">H</span>
         <span>HERMES <strong>RUN</strong></span>
       </a>
       <nav aria-label="Navigation">
-        <a href="../privacy/">Confidentialité Android</a>
+        <a href="../privacy/">Android privacy policy (French)</a>
       </nav>
     </header>
     <main class="document">
       <div class="document-heading">
-        <p class="eyebrow">REVUE APPGALLERY</p>
-        <h1>Instructions de revue HERMES Sport</h1>
-        <p class="meta">Activité entièrement fictive · 6 septembre 2026</p>
+        <p class="eyebrow">APPGALLERY REVIEW</p>
+        <h1>HERMES Sport reviewer instructions</h1>
+        <p class="meta">Android 0.1.0 (version code 3) · fr.hermes.sport.mobile · Updated 22 October 2026</p>
       </div>
-      <h2>Connexion et appairage</h2>
-      <p>Application Android <strong>fr.hermes.sport.mobile</strong>, version <strong>0.1.0 (code 2)</strong>. La connexion est obligatoire. Au premier lancement, saisissez l'adresse HTTPS fournie dans le champ privé « User name » d'AppGallery Connect, puis un code d'appairage fourni dans les remarques privées « For reviewer ».</p>
-      <p>Il n'y a pas de compte ni de mot de passe classique. Chaque code est à usage unique pour un appareil : utilisez un autre code pour un second appareil. La date d'expiration figure dans les remarques privées. Si les codes sont utilisés ou expirés, contactez <a href="mailto:matthieu_felix@yahoo.fr">matthieu_felix@yahoo.fr</a>.</p>
-      <h2>Parcours de test</h2>
+      <h2>1. Connect using a pairing code</h2>
+      <p><strong>This app does not use a username and password login.</strong> It connects to a private HERMES server using a one-use pairing code. No account registration, Huawei Health login, VPN or Tailscale account is required. The application interface is in French.</p>
       <ol>
-        <li>Après appairage, consultez les trois séances de démonstration.</li>
-        <li>Ouvrez le détail d'une séance pour consulter les mesures disponibles.</li>
-        <li>Testez l'import du fichier TCX fictif ci-dessous et vérifiez son aperçu avant de confirmer.</li>
+        <li>Open the installed app. In <strong>Adresse du serveur HTTPS</strong>, paste the complete HTTPS address provided in the private <strong>User name</strong> field of AppGallery Connect, including its port number.</li>
+        <li>In <strong>Code d'appairage</strong>, paste <strong>one complete code starting with <code>hmp.</code></strong> from the private <strong>For reviewer → Remarks</strong> field. Copy the whole code without spaces or line breaks. Do not paste the explanatory text from the AppGallery <strong>Password</strong> field.</li>
+        <li>Tap <strong>Appairer ce téléphone</strong> (Pair this phone). The home screen loads the synthetic review activities.</li>
       </ol>
-      <p>La synchronisation Garmin et le Coach ne sont pas disponibles sur cette instance de revue.</p>
-      <h2>Fichier TCX de démonstration</h2>
-      <p>Ce fichier permet d'essayer l'import TCX dans HERMES Sport. Il ne contient aucune activité personnelle.</p>
-      <p><a href="review-run-appgallery.tcx" download="review-run-appgallery.tcx">Télécharger le fichier TCX fictif</a></p>
-      <p>Dans l'application, ouvrez <strong>Sources</strong>, lisez les informations de confidentialité, cochez l'accord pour l'envoi du fichier, puis choisissez ce TCX. Vérifiez l'aperçu avant de confirmer l'import.</p>
+      <p><strong>Use a different code for each device.</strong> A code cannot be reused after successful pairing, including after signing out or reinstalling the app. Two separate reviewer codes are provided in the private remarks. They expire on <strong>10 November 2026 at 22:59:59 UTC</strong>. If no unused code remains, contact <a href="mailto:matthieu_felix@yahoo.fr">matthieu_felix@yahoo.fr</a> for another code.</p>
+      <h2>2. Review activities and TCX import</h2>
+      <ol>
+        <li>Open <strong>Séances</strong> (Activities), then open a synthetic activity to inspect its statistics and heart-rate chart. Some demonstration activities intentionally have missing measurements.</li>
+        <li>Download the <a href="review-run-appgallery.tcx" download="review-run-appgallery.tcx">fictional TCX sample</a> on the review device.</li>
+        <li>Open <strong>Sources</strong>, read the privacy information, tick the consent checkbox and choose the TCX file. Inspect the preview, then confirm the import. Return to <strong>Séances</strong> to inspect the result. Reimporting the same file may report that the activity is already present.</li>
+      </ol>
+      <h2>3. Review the AI Coach</h2>
+      <p>Open <strong>Coach</strong>, enter <q>Que signifie ma cadence de course pour mon entraînement ?</q> and submit the question. Wait for the generated response. The response displays <strong>Réponse générée par intelligence artificielle (IA)</strong> and scientific references with their attribution and licence. The review instance uses synthetic activities and a separate scientific review corpus. Garmin synchronisation is unavailable on this instance.</p>
+      <h2>4. Sign out last</h2>
+      <p>When testing is complete, open <strong>Réglages → Déconnecter ce téléphone</strong> (Settings → Disconnect this phone). This revokes that device's session and returns to the pairing screen. Signing in again requires another unused pairing code.</p>
+      <h2>Connection troubleshooting</h2>
+      <p>If pairing fails, check that the server address includes <strong>https://</strong> and the supplied port, and that only one complete <strong>hmp.</strong> code was pasted. If the code was already used on another device, try the other code. Please send the on-screen error and the device model to <a href="mailto:matthieu_felix@yahoo.fr">matthieu_felix@yahoo.fr</a> if access still fails.</p>
+      <section lang="fr">
+        <h2>Aide en français</h2>
+        <p>Dans l'application, recopiez l'adresse complète du champ privé « User name » dans « Adresse du serveur HTTPS », puis un seul code complet des remarques privées dans « Code d'appairage ». Touchez « Appairer ce téléphone ». Il n'existe pas de mot de passe classique. Chaque code est à usage unique ; un nouvel appareil ou une reconnexion après déconnexion nécessite un autre code.</p>
+        <p>Le profil de revue permet la consultation de séances fictives, l'import TCX avec consentement préalable et le Coach IA. Le fichier téléchargeable ci-dessus est entièrement fictif. Il ne contient aucune activité personnelle.</p>
+      </section>
     </main>
   </body>
 </html>
+
